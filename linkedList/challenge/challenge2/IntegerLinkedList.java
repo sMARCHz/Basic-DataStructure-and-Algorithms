@@ -35,7 +35,7 @@ public class IntegerLinkedList {
         IntegerNode newNode = new IntegerNode(value);
         IntegerNode current = head.getNext();
         IntegerNode previous = head;
-        while(current != null && current.getValue() <= value) {
+        while (current != null && current.getValue() <= value) {
             previous = current;
             current = current.getNext();
         }

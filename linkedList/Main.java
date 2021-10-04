@@ -2,7 +2,7 @@ import model.Employee;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.ListIterator;
 
 public class Main {
 
@@ -41,10 +41,10 @@ public class Main {
         jdkLinkedList.add(georgeBrown);
         System.out.print("HEAD");
         // Print#1
-        Iterator iter = jdkLinkedList.iterator();
-        while (iter.hasNext()) {
+        ListIterator<Employee> iterator = jdkLinkedList.listIterator();
+        while (iterator.hasNext()) {
             System.out.print(" <=> ");
-            System.out.print(iter.next());
+            System.out.print(iterator.next());
         }
         // Print#2
         for (Employee employee : jdkLinkedList) {
