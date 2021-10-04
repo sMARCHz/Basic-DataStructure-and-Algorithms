@@ -2,9 +2,10 @@ package Sorting;
 
 public class QuickSort {
 
-    // Worst: O(n^2)
+    // O(nlog(n)), Worst: O(n^2)
     // Unstable
     // Create pivot then sort based on pivot (smaller value to the left of pivot and larger to the right) then repeat it
+    // Is considered better than mergeSort because it doesn't need extra space, worst case can avoid by using randomized quicksort, etc.
     public static void main(String[] ars) {
         int[] array = {20, -1, 59, 48, 0, -22};
         quickSort(array, 0, array.length);

@@ -2,7 +2,7 @@ package Sorting;
 
 public class BubbleSort {
 
-    // Worst: O(n^2)
+    // O(n^2)
     // Stable
     // Bubble large value to the right
     public static void main(String[] args) {

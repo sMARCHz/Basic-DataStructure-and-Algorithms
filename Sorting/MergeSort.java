@@ -2,7 +2,7 @@ package Sorting;
 
 public class MergeSort {
 
-    // Worst: O(nlogn)
+    // O(nlog(n))
     // Stable
     // Divide and Conquer -> Scope to the smallest array then sort and merge to the array
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package Sorting;
 
 public class ShellSort {
 
-    // Worst: O(n^2)
+    // O(nlog(n)), Worst: O(n^2)
     // Unstable
     // Similar to insertion sort but with gap
     public static void main(String[] args) {

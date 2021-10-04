@@ -1,4 +1,4 @@
-package Sorting.Challenge;
+package Sorting.challenge;
 
 public class SortingChallenge1 {
 

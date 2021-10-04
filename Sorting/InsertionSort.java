@@ -2,7 +2,7 @@ package Sorting;
 
 public class InsertionSort {
 
-    // Worst: O(n^2)
+    // O(n^2)
     // Stable
     // Insert value to sortedArray which is on the left
     public static void main(String[] args) {

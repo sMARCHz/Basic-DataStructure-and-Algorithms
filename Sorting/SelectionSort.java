@@ -2,7 +2,7 @@ package Sorting;
 
 public class SelectionSort {
 
-    // Worst: O(n^2)
+    // O(n^2)
     // Unstable
     // Select the largestValue then swap to the right
     public static void main(String[] args) {
