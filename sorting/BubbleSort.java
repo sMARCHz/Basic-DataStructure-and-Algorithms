@@ -1,28 +1,24 @@
-package Sorting;
-
-public class SelectionSort {
+public class BubbleSort {
 
     // O(n^2)
-    // Unstable
-    // Select the largestValue then swap to the right
+    // Stable
+    // Bubble large value to the right
     public static void main(String[] args) {
         int[] array = {20, -1, 59, 48, 0, -22};
-        selectionSort(array);
+        bubbleSort(array);
 
         for (int i : array) {
             System.out.println(i);
         }
     }
 
-    public static void selectionSort(int[] array) {
+    public static void bubbleSort(int[] array) {
         for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
-            int indexOfLargestValue = 0;
-            for (int j = 1; j <= lastUnsortedIndex; j++) {
-                if (array[j] > array[indexOfLargestValue]) {
-                    indexOfLargestValue = j;
+            for (int j = 0; j < lastUnsortedIndex; j++) {
+                if (array[j] > array[j + 1]) {
+                    swap(array, j, j + 1);
                 }
             }
-            swap(array, indexOfLargestValue, lastUnsortedIndex);
         }
     }
 

@@ -1,5 +1,3 @@
-package Sorting;
-
 public class ShellSort {
 
     // O(nlog(n)), Worst: O(n^2)

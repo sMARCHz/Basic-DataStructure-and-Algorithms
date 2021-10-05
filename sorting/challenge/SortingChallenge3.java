@@ -1,4 +1,4 @@
-package Sorting.challenge;
+package challenge;
 
 public class SortingChallenge3 {
 

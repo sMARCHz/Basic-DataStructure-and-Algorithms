@@ -1,5 +1,3 @@
-package Sorting;
-
 public class RadixSort {
 
     // O(n) but need to make assumption about value

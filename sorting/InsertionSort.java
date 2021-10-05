@@ -1,5 +1,3 @@
-package Sorting;
-
 public class InsertionSort {
 
     // O(n^2)
