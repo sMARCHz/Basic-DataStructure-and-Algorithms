@@ -1,11 +1,13 @@
 package challenge;
 
 import java.util.LinkedList;
+import java.util.Locale;
+import java.util.Queue;
 
-public class StackChallenge {
+public class QueueChallenge {
 
     // Challenge#1
-    // Using a stack, determine whether string is palindrome
+    // Using a queue, determine whether string is palindrome
     // Ignore punctuation and spaces
 
     public static void main(String[] args) {
@@ -23,16 +25,22 @@ public class StackChallenge {
 
     public static boolean checkForPalindrome(String string) {
         // solution
+        LinkedList<Character> queue = new LinkedList<>();
         LinkedList<Character> stack = new LinkedList<>();
         String stringNoPunctuation = string.toLowerCase().replaceAll("[^a-z]", "");
+
         for (int i = 0; i < stringNoPunctuation.length(); i++) {
-            stack.push(stringNoPunctuation.charAt(i));
+            char c = stringNoPunctuation.charAt(i);
+            queue.addLast(c);
+            stack.push(c);
         }
 
-        StringBuilder reverseString = new StringBuilder();
         while (!stack.isEmpty()) {
-            reverseString.append(stack.pop());
+            if (!stack.pop().equals(queue.removeFirst())) {
+                return false;
+            }
         }
-        return String.valueOf(reverseString).equals(stringNoPunctuation);
+
+        return true;
     }
 }

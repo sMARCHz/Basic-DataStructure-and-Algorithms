@@ -9,15 +9,15 @@ public class ArrayStack {
     // LinkedList is ideal for stack but if your memory is tight, or you know maximum number of items you can use array instead of it.
 
     private Employee[] stack;
-    private int top;
+    private int top; // point to right-most side of array (exclusive)
 
     public ArrayStack(int capacity) {
         stack = new Employee[capacity];
     }
 
     public void push(Employee employee) {
+        // resize array if it's full
         if (top == stack.length) {
-            // need to resize array
             Employee[] newArray = new Employee[2 * stack.length];
             System.arraycopy(stack, 0, newArray, 0, stack.length);
             stack = newArray;
